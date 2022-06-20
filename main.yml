@@ -1,12 +1,15 @@
 - name: main
   hosts: all
   tasks:
-    - name: "print vars"
-      debug: 
-        var=hostvars[inventory_hostname]
+#     - name: "print vars"
+#       debug: 
+#         var=hostvars[inventory_hostname]
 
-    - name: "task 11"
-      shell: "echo 11 && echo 11 > /tmp/11.txt"
+    - name: "task starting"
+      shell: "date && echo start"
   
-    - name: "task 22"
-      shell: "echo 222222"
+    - name: "task sleep"
+      shell: "sleep 30"
+      
+    - name: "task finished"
+      shell: "date && echo end"
