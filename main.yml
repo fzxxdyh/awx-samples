@@ -13,3 +13,6 @@
       
     - name: "task finished"
       shell: "date && echo end"
+    
+    - name: "debug name"
+      debug: msg="hello {{name}} bye bye"
