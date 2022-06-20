@@ -1,5 +1,5 @@
 - name: test2
   hosts: all
   tasks:
-    - name: "task 2"
+    - name: "task 22"
       shell: "hostname && echo 22 && echo 22 > /tmp/22.txt"
