@@ -1,0 +1,5 @@
+- name: test1
+  hosts: all
+  tasks:
+    - name: "task 1"
+      shell: "hostname && echo 11 && echo 11 > /tmp/11.txt"
