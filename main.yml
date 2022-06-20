@@ -7,6 +7,9 @@
 
     - name: "task starting"
       shell: "date && echo start"
+      
+    - name: "debug {{name}} start"
+      debug: msg="hello {{name}} 11111"
   
     - name: "task sleep"
       shell: "sleep 30"
@@ -14,5 +17,5 @@
     - name: "task finished"
       shell: "date && echo end"
     
-    - name: "debug name"
-      debug: msg="hello {{name}} bye bye"
+    - name: "debug {{name}} end"
+      debug: msg="hello {{name}} 22222"
