@@ -7,3 +7,6 @@
 
     - name: "task 11"
       shell: "echo 11 && echo 11 > /tmp/11.txt"
+  
+    - name: "task 22"
+      shell: "echo 222222"
