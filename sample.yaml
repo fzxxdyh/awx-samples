@@ -2,5 +2,4 @@
   hosts: all
   tasks:
     - name: "print sample"
-      debug:
-        msg: "sample, 123!"
+      shell: "hostname && echo 11"
