@@ -1,5 +1,0 @@
-- name: "sample"
-  hosts: all
-  tasks:
-    - name: "print sample"
-      shell: "hostname && echo 11"
