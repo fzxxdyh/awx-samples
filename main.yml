@@ -12,7 +12,7 @@
       debug: msg="hello {{name}} 11111"
       
     - name: "tasks: {{ansible_ssh_host}}"
-      shell: "host: {{ansible_ssh_host}}"
+      debug: msg="host: {{ansible_ssh_host}}"
       
     - name: "task sleep {{seconds}}"
       shell: "sleep {{seconds}}"
