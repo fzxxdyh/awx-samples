@@ -10,12 +10,15 @@
       
     - name: "debug {{name}} start"
       debug: msg="hello {{name}} 11111"
-  
-    - name: "task sleep"
-      shell: "sleep 30"
       
-    - name: "task finished"
-      shell: "date && echo end"
+    - name: "tasks: {{ansible_ssh_host}}"
+      shell: "host: {{ansible_ssh_host}}"
+      
+    - name: "task sleep {{seconds}}"
+      shell: "sleep {{seconds}}"
+      
+    - name: "test error"
+      shell: "xxxxxxxxxxxxxxx"
     
     - name: "debug {{name}} end"
       debug: msg="hello {{name}} 22222"
