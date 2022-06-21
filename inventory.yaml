@@ -1,0 +1,7 @@
+all:
+  hosts:
+    dyh15:
+      ansible_ssh_host: 192.168.55.15
+      ansible_ssh_port: 22
+      ansible_ssh_user: root
+      ansible_ssh_password: root@123
