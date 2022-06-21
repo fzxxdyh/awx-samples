@@ -6,7 +6,7 @@
 #         var=hostvars[inventory_hostname]
 
     - name: "task starting"
-      shell: "date && echo start1111"
+      shell: "date && echo start1111 > /tmp/11.txt"
       
     - name: "debug {{name}} start"
       debug: msg="hello {{name}} 11111"
