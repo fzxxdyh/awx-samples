@@ -5,8 +5,8 @@
 #       debug: 
 #         var=hostvars[inventory_hostname]
 
-    - name: "task starting"
-      shell: "date && echo start1111 > /tmp/11.txt"
+    - name: "task starting on {{inventory_hostname}}"
+      shell: "date && echo {{inventory_hostname}}"
       
     - name: "debug {{name}} start"
       debug: msg="hello {{name}} 11111"
@@ -21,9 +21,6 @@
       shell: "xxxxxxxxxxxxxxx"
       ignore_errors: yes
     
-    - name: "debug {{name}} end"
-      debug: msg="hello {{name}} 22222"
-  
     - name: "debug inventory_hostname {{inventory_hostname}}"
       debug: msg="{{inventory_hostname}}"
   
