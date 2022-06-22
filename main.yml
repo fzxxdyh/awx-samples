@@ -23,3 +23,9 @@
     
     - name: "debug {{name}} end"
       debug: msg="hello {{name}} 22222"
+  
+    - name: "debug inventory_hostname {{inventory_hostname}}"
+      debug: msg="{{inventory_hostname}}"
+  
+    - name: "touch file"
+      shell: "touch /tmp/{{inventory_hostname}}.txt"
