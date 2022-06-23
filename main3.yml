@@ -1,0 +1,30 @@
+- name: main
+  hosts: all
+  gather_facts: no
+  gather_subset: min
+  tasks:
+#     - name: "print vars"
+#       debug: 
+#         var=hostvars[inventory_hostname]
+
+    - name: "task starting on {{inventory_hostname}}"
+      shell: "date && echo {{inventory_hostname}}"
+      
+    - name: "debug {{name}} start"
+      debug: msg="hello {{name}} 11111"
+      
+    - name: "tasks: {{ansible_ssh_host}}"
+      debug: msg="this host {{ansible_ssh_host}}"
+      
+    - name: "task sleep {{seconds}}"
+      shell: "sleep {{seconds}}"
+      
+    - name: "test error"
+      shell: "xxxxxxxxxxxxxxx"
+      ignore_errors: yes
+    
+    - name: "debug inventory_hostname {{inventory_hostname}}"
+      debug: msg="{{inventory_hostname}}"
+  
+    - name: "touch file"
+      shell: "touch /tmp/{{inventory_hostname}}.txt"
