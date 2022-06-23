@@ -10,8 +10,8 @@
     - name: "task starting on {{inventory_hostname}}"
       shell: "date && echo {{inventory_hostname}}"
       
-    - name: "debug gather_facts:{{gather_facts}} gather_subset:{{gather_subset}}"
-      debug: msg="hello gather_facts:{{gather_facts}} gather_subset:{{gather_subset}}"
+    - name: "debug 111"
+      debug: msg="hello 111"
       
     - name: "tasks: {{ansible_ssh_host}}"
       debug: msg="this host {{ansible_ssh_host}}"
