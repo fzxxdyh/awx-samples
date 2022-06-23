@@ -1,7 +1,7 @@
 - name: main
   hosts: all
-  gather_facts: {{gather_facts}}
-  gather_subset: {{gather_subset}}
+  gather_facts: yes
+  gather_subset: min
   tasks:
 #     - name: "print vars"
 #       debug: 
