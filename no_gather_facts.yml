@@ -22,4 +22,4 @@
       debug: msg="{{inventory_hostname}}"
   
     - name: "touch file"
-      shell: "touch /tmp/{{inventory_hostname}}.txt"
+      shell: "touch /tmp/{{inventory_hostname}}.txt" 
