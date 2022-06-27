@@ -1,10 +1,6 @@
 - name: main
   hosts: all
   tasks:
-#     - name: "print vars"
-#       debug: 
-#         var=hostvars[inventory_hostname]
-
     - name: "task starting on {{inventory_hostname}}"
       shell: "date && echo {{inventory_hostname}}"
       
